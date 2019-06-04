@@ -1,4 +1,5 @@
-#Installation instruction
+# Installation instruction
+
 * clone the repository `git clone https://github.com/panopticum/access-log-parser`
 * execute sql statements from the file access-log-parser/src/main/resources/schemas.sql
 * configure the database credentials in access-log-parser/src/main/resources/application.properties
