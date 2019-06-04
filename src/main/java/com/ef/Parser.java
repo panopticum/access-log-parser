@@ -72,6 +72,7 @@ public class Parser implements CommandLineRunner {
 
             System.exit(0);
         } catch (FileNotFoundException | ValidationException error) {
+            logger.info(delimiter);
             logger.error(error.getMessage());
             System.exit(-1);
         }

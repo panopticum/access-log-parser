@@ -13,7 +13,7 @@ public class FileSerivce {
 
     public void read(String filePath, ReadableStringList strReader) throws FileNotFoundException {
         if (!new File(filePath).exists()) {
-            throw new FileNotFoundException(filePath + " doesn't exists");
+            throw new FileNotFoundException("File doesn't exists");
         }
 
         String line;

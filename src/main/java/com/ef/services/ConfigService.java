@@ -22,10 +22,11 @@ public class ConfigService {
                 case "--duration":
                     config.setDuration(val);
                     break;
-                case "--threshold":
-                    config.setThreshold(Integer.valueOf(val));
                 case "--accesslog":
                     config.setAccesslog(val);
+                    break;
+                case "--threshold":
+                    config.setThreshold(Integer.valueOf(val));
                     break;
             }
         });

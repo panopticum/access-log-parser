@@ -3,7 +3,7 @@
 * execute sql statements from the file access-log-parser/src/main/resources/schemas.sql
 * configure the database credentials in access-log-parser/src/main/resources/application.properties
 * build the project `mvn package`
-* execute: `./parser.jar --startDate=2017-01-01.15:00:00 --duration=hourly --threshold=200`
+* execute: `./access-log-parser/target/parser.jar --startDate=2017-01-01.15:00:00 --duration=hourly --threshold=200`
 
 # Find all limit exceeded requests
 SELECT ip

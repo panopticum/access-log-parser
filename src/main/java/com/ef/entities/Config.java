@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
@@ -18,5 +19,5 @@ public class Config {
     @NotNull @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss") private String startDate;
     @NotNull @Pattern(regexp = HOURLY_DURATION + "|" + DAILY_DURATION) private String duration;
     @NotNull @Min(1) private Integer threshold;
-    @NotNull private String accesslog;
+    @NotNull @NotEmpty  private String accesslog;
 }
